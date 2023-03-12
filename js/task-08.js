@@ -12,6 +12,6 @@ formLogin.addEventListener('submit', event => {
     console.log(formData);
     formLogin.reset();
   } else {
-    alert('Всі поля повинні бути заповнені');
+    alert('Заповніть всі поля!');
   }
 });
