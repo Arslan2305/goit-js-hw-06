@@ -34,15 +34,18 @@ const ingredients = [
 
 const ingredientsList = document.querySelector('#ingredients');
 
-const items = ingredients.map(ingredient => {
+const makeIngredientsList = ingredients => {
+
+  return ingredients.map(ingredient => {
   const listItem = document.createElement('li');
   listItem.classList.add('item');
   listItem.textContent = ingredient;
 
   return listItem;
 });
+}
 
-console.log(items);
-
+const items = makeIngredientsList(ingredients);
 ingredientsList.append(...items);
-console.log(ingredientsList)
+console.log(ingredients);
+console.log(ingredientsList);
